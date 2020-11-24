@@ -1,0 +1,280 @@
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128630137-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+    gtag('config', 'UA-128630137-1');
+  </script>
+		<link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+				// Prevent default anchor click behavior
+				event.preventDefault();
+
+				// Store hash
+				var hash = this.hash;
+
+				// Using jQuery's animate() method to add smooth page scroll
+				// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+					// Add hash (#) to URL when done scrolling (default click behavior)
+					window.location.hash = hash;
+				});
+			} // End if
+		});
+	});
+	</script>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nick Le</title>
+
+</head>
+    
+    
+<body>	
+	<div class="bg-color-nav">
+	<nav class="navbar navbar-expand-lg generic-FadeIn">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo-white.svg" width="32px" height="32px" class="content-align">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="about.html">about</a>
+				<a class="nav-item nav-link" href="index.html#work">work</a>
+				<a class="nav-item nav-link" href="assets/Resume%20-%20January%202020.pdf">resumé</a>
+			</div>
+		</div>
+	</nav>
+	</div>
+ 
+<div class="bg-color-splash">	
+	<div class="container">
+    <div class ="splash generic-FadeIn">
+			<img src="images/nick_profile_pic_duotone.jpg" class="img-fluid splash-img">
+			<a href="#work"><img src="images/down-arrow-s.svg" class="img-fluid down-arrow"></a>
+			<div class="splash-content">
+				<div class="splash-title">Hey there! My name's <a href="https://www.linkedin.com/in/nicksle/" id="a-pd">Nick</a>.</div>
+				<img src="images/zig-zag.svg" class="img-fluid zig-zag">
+				<div class="splash-text">I’m a <a href="https://dribbble.com/nicksle" id="a-pd">product designer</a>, student at <a href="https://www.berkeley.edu/" id="a-pd">UC Berkeley</a>, former design intern at <a href="https://cash.app/" id="a-pd">Cash App</a>, and <br>pop music enthusiast.</div>
+			</div>
+		</div>
+  </div>
+</div>
+    
+<div class="layout generic-FadeIn" id="work">
+	
+	<div class="container mx-auto">
+		<div class="row">
+				<div class="col">
+						<div class="card">
+								<div id="helix-card" class="card-body">
+										<div class="card-content"> 
+												<img class="card-img img-responsive" src="images/sls-card-img.svg" alt="Card image">
+													<div class="card-text">
+															<h3 class="card-title medium" id="">Simplifying Shared Living Spaces</h3>
+															<a href="sls.html" class="btn btn-helix">Read the Roommate Case Study</a>
+													</div>
+										</div>
+								</div> 
+						</div>
+				</div>
+		  </div>
+   </div>
+
+	<div class="container mx-auto">
+		<div class="row">
+				<div class="col">
+						<div class="card">
+								<div id="cashapp-card" class="card-body">
+										<div class="card-content"> 
+												<img class="card-img img-responsive" src="images/cashapp-card-img .svg" alt="Card image">
+													<div class="card-text">
+															<h3 class="card-title medium" id="">Designing For Cash App</h3>
+															<a href="cashapp.html" class="btn btn-cashapp">Read About My Experience @ Cash App</a>
+													</div>
+										</div>
+								</div> 
+						</div>
+				</div>
+		  </div>
+   </div>
+	
+	<div class="container mx-auto">
+		<div class="row">
+				<div class="col">
+						<div class="card">
+								<div id="nso-card" class="card-body">
+										<div class="card-content"> 
+												<img class="card-img img-responsive" src="images/nso-card-img.svg" alt="Card image">
+													<div class="card-text">
+															<h3 class="card-title medium" id="">Navigating New Student Orientation</h3>
+															<a href="nsorientation.html" class="btn btn-nso">Read the Google Design Challenge Case Study</a>
+													</div>
+										</div>
+								</div> 
+						</div>
+				</div>
+		  </div>
+   </div>
+	
+	
+		<div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div id="search-card" class="card-body">
+                        <div class="card-content"> 
+													<img src=images/search-card-img.svg class="card-img img-fluid">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="search-card">Seeking Out Better Search</h3>
+                                <a href="search.html" class="btn btn-search">Read the Digital Search Case Study</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+		<div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div id="hiven-card" class="card-body">
+                        <div class="card-content"> 
+                           <img class="card-img img-responsive" src="images/hiven-card-img.svg" alt="Card image">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="">Rethinking Work From Home</h3>
+                                <a href="hiven.html" class="btn btn-hiven">Read the Hiven Redesign Case Study</a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<!--<div class="container mx-auto">
+		<div class="row">
+				<div class="col">
+						<div class="card fadeIn-delay">
+								<div id="wegrow" class="card-body">
+										<div class="card-content"> 
+                           <img class="card-img img-responsive" src="images/wegrow-card-img.svg" alt="Card image">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="">Growing a Gardening Community</h3>
+                                <a href="wegrow.html" class="btn btn-wegrow">Read the WeGrow Case Study</a>
+                            </div>
+                      </div> 
+                  </div> 
+              </div>
+          </div>
+      </div>
+   </div>-->
+	
+	
+
+	
+		<!--<div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div id="pix-card" class="card-body">
+                        <div class="card-content"> 
+													<img>
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="">Facilitating Harmonious Human Interactions<h3>
+                                <a href="pix2.html" class="btn btn-pix disabled">Read the Pix Case Study</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>-->
+	
+<!--<div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div id="venmo-card" class="card-body">
+                        <div class="card-content"> 
+                           <img class="card-img img-responsive" src="images/venmo-card-img.svg" alt="Card image">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="">Viewing Venmo's Design</h3>
+                                <a href="venmo.html" class="btn btn-venmo">Read the Venmo Product Critque</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>-->
+	
+    <!--<div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card fadeIn-delay">
+                    <div id="helix" class="card-body">
+                        <div class="card-content"> 
+                           <img class="card-img img-fluid" src="images/helix-card-img%20copy.svg" alt="Card image">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="helix-text">Branding a Biology Based Club</h3>
+                                <a href="helix.html" class="btn btn-helix">Read the Helix Brand Case Study</a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>-->
+	
+
+	</div>    
+
+	
+	<footer>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col center">
+					<h4 class="medium"><a href="mailto:nicksle@berkeley.edu?subject=Let's Talk!" id="email">lets get creative — nicksle@berkeley.edu</a></h4>
+					<h4 class="medium" id="ftr-spc"><a href="https://dribbble.com/nicksle" id="dribbble">dribbble</a></h4>
+					<h4 class="medium" id="ftr-spc"><a href="https://twitter.com/nicksle" id="twitter">twitter</a></h4>
+        </div>
+      </div>
+		</div>
+   </footer>
+
+</body>
+</html>
+

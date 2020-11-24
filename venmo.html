@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128630137-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+    gtag('config', 'UA-128630137-1');
+  </script>
+
+		<link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venmo Critque</title>
+</head>
+<body>
+    
+ <nav class="navbar navbar-expand-lg generic-FadeIn">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo.svg" width="32px" height="32px" class="content-align">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item-cs nav-link" href="about.html">about<span class="sr-only">(current)</span></a>
+				<a class="nav-item-cs nav-link" href="index.html#work">work</a>
+				<a class="nav-item-cs nav-link" href="assets/Nicholas%20Le,%20Resume%20January%202019.pdf">resumé</a>
+			</div>
+		</div>
+	</nav>
+   
+	<div class="container generic-FadeIn">
+        <div class="cssplash">
+            <img class="d-block w-100 imag-responsive" src="images/venmo_splash.svg">  
+        </div>
+    </div>
+    
+    <div class="container generic-FadeIn">
+      <div class="center">
+          <div class="bold text-center cs-heading">
+						<b>Product Critque: Venmo</b>
+          </div>
+        <div class="text-center cs-subheading" id="venmo">
+          Picking Apart Everyone's Favorite Payment Sharing App
+        </div>
+        </div>
+  </div>
+
+	<div class="container generic-FadeIn">
+		<div class="animate-in cs-content">
+			<video width="800px" height="600px" autoplay muted loop>
+				<source src="images/Venmo%20Mock.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	
+	
+
+  	<div class="container">
+        <div class="animate-in cs-content">
+          <div class="cs-title">
+            <b>Background</b>
+          </div>
+          <div class="cs-text">
+						<p>Venmo is today’s generation payment sharing app of choice, allowing users to find friends and request payment or send a payment.  We all use it: whether it’s to split dinner, pay rent, or even to transfer funds to a different account.  Although I do find Venmo to be immensely usefully, I think that it’s design has some junk features that hinder’s it’s ability to function as an efficient product.  I want to a take <mark id="venmo-mark">quick dive into Venmo's app design and identify what design choices hinder the user experience as well as ideate ways to remedy those issues</mark>.  Note: this is more of a quick analysis of Venmo and its flaws rather than an in-depth redesign.</p>
+					</div>
+			</div>
+	</div>
+  
+  	<div class="container">
+        <div class="cs-content">
+          <div class="cs-title">
+            <b>The Product's Purpose</b>
+          </div>
+          <div class="cs-text">
+            <p>The first part of critiquing a product is to identify its purpose or goals and to analyze how well it acheives these goals.  To do this, I talked to some friends who use Venmo, as well as did some secondary research online and deduced that: </p>
+						<br>
+						<h4 class="center" id="venmo">Venmo’s primary purpose is to allow users to send money to one another, functioning as a pseudo-bank while the funds await to be transferred into the other users checking or savings account.</h4>
+						<br>
+						<p>Like most products, Venmo has two different sets of goals: the company’s goals, and the user’s goals.</p>
+						
+						<div class="cs-subtitle" id="venmo">Company's Goals</div>
+						<p>For the company, the <mark id="venmo-mark">ultimate goal of Venmo is, unsurprisingly, to make money</mark>.  To do this:</p>
+						<ul>
+							<li>the app stores funds in a “Venmo account” (which the company can use to invest) which then needs to be transferred to the user’s checking account.</li>
+							<li>in order to work optimally, the product needs to:
+								<ul>
+									<li><mark id=venmo-mark>encourage</mark> users to <mark id=venmo-mark>transfer money</mark> via Venmo</li>
+									<li><mark id=venmo-mark>discourage</mark> users from <mark id=venmo-mark>transferring money out</mark> from their Venmo account to their checking/savings account</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div class="cs-subtitle" id="venmo">User's Goals</div>
+						<p>The user’s goal is the same as the app’s purpose: <mark id=venmo-mark>to transfer money other users</mark>.  Things that user’s need from Venmo are:</p>
+						<ul>
+							<li>the ability to <mark id=venmo-mark>quickly find their friends</mark> in order to request or pay </li>
+							<li>be able to <mark id=venmo-mark>quickly transfer money from their Venmo account to their checking/savings account</mark></li>
+						</ul>
+						<br>
+						<p>Looking at the Venmo app’s user interface, we can see that it does fulfill both the company’s and user’s goals; albeit it does so in a bit of a clunky way.  Three flaws that I’ve identified within Venmo’s design are:</p>
+						<ul>
+							<li>an inefficient <mark id=venmo-mark>funds transfer process</mark></li>
+							<li>an unclear and cluttered <mark id=venmo-mark>dashboard</mark></li>
+							<li>a clunky <mark id=venmo-mark>payment flow</mark> that leaves <mark id=venmo-mark>users feeling uncertain</mark></li>
+						</ul>
+				
+            </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="animate-in cs-content">
+        <div class="cs-title">
+          <b>Taking a Closer Look at the App</b>
+        </div>
+          <div class="cs-text">
+						<div class="cs-subtitle" id="venmo">Funds Transfer</div>
+						<p>When comparing the company’s goals and the user’s goals there is a discrepancy in what the two groups want in terms of the Venmo account funds.  Whereas <mark id=venmo-mark>the company wants users to keep funds within the Venmo account for as long as possible</mark>, <mark id=venmo-mark>users typically want to quickly transfer their Venmo balance as soon as possible</mark>.  Initially, Venmo only had one design solution for funds transfer:</p>
+						<ul>
+							<li>users can transfer their existing balance to their checking account for free, but it would take 2-3 days.</li>
+						</ul>
+						<p>This solution fulfills the company’s goals, but was not well received by users.  Later updates to Venmo introduced new solutions to the funds transfer problem.  They included the ability:</p>
+						<ul>
+							<li>to use their current Venmo balance to pay future Venmo requests</li>
+							<li>to transfer the Venmo balance to a checking/savings account instantly for a relatively negligible fee of 25¢ </li>
+							<li>to use their Venmo balance at select retailers</li>
+						</ul>
+						<p>The latest design solution introduced by Venmo was their Venmo card, which allows users to treat their Venmo balance as a checking account and make purchases at nearly any store with their Venmo debit card.</p>
+						
+						<div class="cs-subtitle" id="venmo">Home Dashboard</div>
+						<p>In my opinion, the Venmo dashboard is poorly designed in terms of reaching both the company’s goals as well as fulfilling the user’s goals.  The current <mark id=venmo-mark>dashboard is taken up by a social media-esque timeline that a majority of users do not interact with</mark>, and <mark id=venmo-mark>pushes the product’s main feature (funds payment and request) into a small icon in the top right corner</mark>.</p>
+						<img src="images/venmo-og-dashboard.svg" class="img-fluid cs-image">
+						<p>To better accomplish both the company's and user’s goals the dashboard should:</p>
+						<ul>
+							<li><mark id=venmo-mark>encourage users to send a payment or request</mark> by implementing a more <mark id=venmo-mark>distinguishable call to action button</mark></li>
+							<li>have more <mark id=venmo-mark>relevant information upfront</mark></li>
+						</ul>
+						<img src="images/venmo-new-dashboard.svg" class="img-fluid cs-image">
+
+						<div class="cs-subtitle" id="venmo">Payment User Flow</div>
+						<p>From my quick talks with friends, it seems as though the payment user flow is one of the biggest offenders in Venmo’s design.  Considering that it is the app’s main purpose, I’m surprised more thought wasn't given to this user flow.  Some issues that were pointed out included:</p>
+						<ul>
+							<li>difficulty for first time users to find [the pay/request button]</li>
+							<li>finding and selecting contacts to pay left user’s feeling uncertain</li>
+							<li>the pay/request buttons having no differentiating features, causing users to mistakenly choose the wrong one</li>
+						</ul>
+						<img src="images/venmo-og-payment.svg" class="img-fluid cs-image">
+						
+						<p>Additionally, it was pointed out that one of the most frequent use cases for Venmo is for groups to split one large dinner bill.  The current pay flow works fine in this scenario as long as the bill is being divided evenly, but if item prices differ, the Venmo payment flow is very inefficient.  Surprisingly Venmo doesn’t offer any in-app solution to make this user flow easier and as an alternative, may users will download a secondary app that allows them to scan a receipt and calculate the total (including tax and tip) per person.</p>
+						<p>When ideating ways to improve the payment user flow, I wanted to address the insights and painpoints that I observed from the quick interviews I did.  Additionally, I wanted to tackle the issues of the user flow as a whole, and not the specific case of bill splitting; although the core pain points addressed were in response to it [bill splitting]. They were the following:</p>
+						<div class= "cs-split">
+						<ul>
+							<li>users occasionally misclick pay instead of request — leading to overdrawn bank accounts
+								<ul>
+									<li>making the payment or request flows more distinct from each other</li>
+								</ul>
+							</li>
+							<li>users find it annoying that they have to fill out the “What is this for” field, often inputting something unrelated or just one quick emoji
+								<ul>
+									<li>reduce the burden put on required user input fields, by making it optional and having it take less screen space</li>
+								</ul>
+							</li>
+							<li>users are frustrated when using Venmo to split a bill (unless everyone has an order of the same amount) because they have to go through the same user flow multiple times
+								<ul>
+									<li>create seperated cards representing different recipients on the same screen, allowing users to adjust the amount per recipient/</li>
+								</ul>
+							</li>
+						</ul>
+						</div>
+						<img src="images/venmo_pay_screens.svg" class="img-fluid cs-image">
+          </div>
+      </div>
+    </div>
+  
+  	<div class="container">
+        <div class="cs-content">
+          <div class="cs-title">
+            <b>Conclusion and Reflection</b>
+          </div>
+          <div class="cs-text">
+            <p>Despite my criticism of the product’s design, I still use Venmo as my primary payment sharing app.  It has strong functionality and wide usage, which allows the cracks in its design to be ignored; and its implementation of new “bank transfer” features (changing the fee from a flat 25 cents to 1% of the transfer) allows it to be even more profitable for the company.  The main design flaws are socially viewed more as an inconvenience and are most people are able to just power through them.  I don’t see the app going anywhere south soon, but I would love to see them take some steps in improving the user experience; and I’m not done looking for the flaws in this app that I begrudgingly need. </p>
+            </div>
+      </div>
+    </div>
+	
+    <div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <div class="card fadeIn-delay">
+                    <div id="helix" class="card-body">
+                        <div class="card-content"> 
+                           <img class="card-img img-responsive" src="images/helix-card-img%20copy.svg" alt="Card image">
+                            <div class="card-text">
+                                <h3 class="card-title medium" id="helix-text">Branding a Biology Based Club</h3>
+                                <a href="helix.html" class="btn btn-helix">Read the Helix Brand Case Study</a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<footer>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col center">
+					<h4 class="medium"><a href="mailto:nicksle@berkeley.edu?subject=Let's Talk!" id="email">lets get creative — nicksle@berkeley.edu</a></h4>
+					<h4 class="medium" id="ftr-spc"><a href="https://dribbble.com/nicksle" id="dribbble">dribbble</a></h4>
+					<h4 class="medium" id="ftr-spc"><a href="https://twitter.com/nicksle" id="twitter">twitter</a></h4>
+        </div>
+      </div>
+		</div>
+   </footer>
+
+</body>
